@@ -1,3 +1,20 @@
 .todos-container{
     padding: 8px;
 }
+
+.priority-ball{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.add-button{
+    background-color: transparent;
+    border: 2px black solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

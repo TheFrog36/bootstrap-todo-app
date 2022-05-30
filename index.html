@@ -16,26 +16,25 @@
                 <a class="navbar-brand" href="#">
                     Todo App
                 </a>
-                <button type="button" class="btn btn-dark" onclick="loadTodos()">Dark</button>
+                <div class="spinner-border" id="loader" style="display: none;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <button id="refresh-button"  type="button" class="btn btn-light" onclick="loadTodos()"><img src="./assets/refresh.svg" height="22"></button>
             </div>
         </nav>
 
         <div class="todos-container" id="todos-container">
-            <!-- <div class="card border-success mb-3">
-                <div class="card-header bg-transparent border-success">Header</div>
-                <div class="card-body text-success">
-                    <h5 class="card-title">Success card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
-                <div class="card-footer bg-transparent border-success">Footer</div>
-            </div> -->
+            
         </div>
-    
+        <div class="position-fixed bottom-0 end-0 ">
+            <button  class="add-button" onclick="goToTodoPage()">
+                <img src="./assets/add.svg" alt=""></button>
+            </div>
+
     </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="./model.js"></script>
 <script src="./app.js"></script>
 </html>
+
