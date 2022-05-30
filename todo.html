@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDoApp</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="nav-bar">
+    <strong class="app-title">ToDo App</strong>
+    <button id="refresh-button" onclick="goHome()">
+      <img width="30px" src="./assets/home.svg" alt="">
+    </button>
+  </header>
+  <div class="todo-container">
+    <h2 id="page-title">Inserisci nuovo Todo</h2>
+    <strong class="section-title">Nome</strong>
+    <input type="text" name="name-input" id="name-input">
+    <strong class="section-title">Tag</strong>
+    <div class="tags-container">
+      <span class="chip tag" onclick="addOrRemoveTag('casa')">casa</span>
+      <span class="chip tag" onclick="addOrRemoveTag('hobby')">hobby</span>
+      <span class="chip tag" onclick="addOrRemoveTag('spesa')">spesa</span>
+      <span class="chip tag" onclick="addOrRemoveTag('lavoro')">lavoro</span>
+      <span class="chip tag" onclick="addOrRemoveTag('famiglia')">famiglia</span>
+    </div>
+    <strong class="section-title">Priorità</strong>
+    <div class="priority-container">
+      <span class="chip priority" onclick="changePriority(0)">bassa</span>
+      <span class="chip priority" onclick="changePriority(1)">media</span>
+      <span class="chip priority" onclick="changePriority(2)">alta</span>
+      <span class="chip priority" onclick="changePriority(3)">molto alta</span>
+    </div>
+    <button onclick="saveTodo()" class="save-button">save</button>
+  </div>
+</body>
+<script src="./model.js"></script>
+<script src="./todo.js"></script>
+
+</html>

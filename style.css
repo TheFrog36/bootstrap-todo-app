@@ -1,0 +1,110 @@
+*{
+  color: #414141;
+  font-family: monospace;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: #eeeeee;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar{
+  min-height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.app-title{
+  font-size: xx-large;
+}
+
+.todos-container{
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.add-button{
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+button{
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+.todo-card{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-bottom: 1px solid;
+  gap: 8px;
+}
+
+.divider{
+  background-color: #414141;
+  width: 100%;
+  height: 2px;
+}
+
+.chip{
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 12px;
+  background-color: #414141;
+  color: #eeeeee;
+  box-sizing: border-box;
+  font-size: small;
+}
+
+.todo-name{
+  font-size: x-large;
+  /* font-weight: bold; */
+}
+
+.buttons-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.section-title{
+  font-size: large;
+}
+
+.save-button{
+  background-color: #414141;
+  color: white;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 8px
+}
